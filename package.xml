@@ -1,0 +1,34 @@
+<package format="2">
+  <name>whisper_ros1</name>
+  <version>0.0.1</version>
+  <description>
+    The whisper_ros1 package provides ROS integration for the Whisper library.
+  </description>
+
+  <maintainer email="zzl3230136428@gmail.com">user</maintainer>
+  <license>MIT</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>threads</build_depend>
+
+  <!-- Export dependencies for building downstream packages -->
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <!-- Export section for additional configuration -->
+  <export>
+    <!-- 其他导出配置 -->
+  </export>
+</package>

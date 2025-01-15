@@ -1,0 +1,57 @@
+<launch>
+    <!-- 定义节点名称和包名 -->
+    <node name="whisper_ros1_node" pkg="whisper_ros1" type="roswhisper-stream" output="screen">
+        <!-- 参数设置 -->
+        <!-- 线程数 -->
+        <param name="n_threads" value="8" />
+        <!-- 音频步长（毫秒） -->
+        <param name="step_ms" value="0" />
+        <!-- 音频长度（毫秒） -->
+        <param name="length_ms" value="30000" />
+        <!-- 保留的音频长度（毫秒） -->
+        <param name="keep_ms" value="200" />
+        <!-- 音频设备ID -->
+        <param name="capture_id" value="-1" />
+        <!-- 最大 tokens 数 -->
+        <param name="max_tokens" value="32" />
+        <!-- 音频上下文 -->
+        <param name="audio_ctx" value="0" />
+
+        <!-- VAD 阈值 -->
+        <param name="vad_thold" value="0.6" />
+        <!-- 频率阈值 -->
+        <param name="freq_thold" value="100.0" />
+
+        <!-- 是否翻译 -->
+        <param name="translate" value="false" />
+        <!-- 是否禁用 fallback -->
+        <param name="no_fallback" value="false" />
+        <!-- 是否打印特殊 tokens -->
+        <param name="print_special" value="false" />
+        <!-- 是否禁用上下文 -->
+        <param name="no_context" value="true" />
+        <!-- 是否禁用时间戳 -->
+        <param name="no_timestamps" value="false" />
+        <!-- 是否启用 tinydiarize -->
+        <param name="tinydiarize" value="false" />
+        <!-- 是否保存音频 -->
+        <param name="save_audio" value="false" />
+        <!-- 是否使用 GPU -->
+        <param name="use_gpu" value="true" />
+        <!-- 是否启用 flash attention -->
+        <param name="flash_attn" value="false" />
+
+        <!-- 语言 -->
+        <param name="language" value="zh" />
+        <!-- 模型路径 -->
+        <param name="model" value="/home/mobilealoha/下载/ggml-medium.bin" />
+        <!-- ROS 节点名称 -->
+        <param name="rosnode_name" value="whisper_ros1_node" />
+        <!-- 订阅的音频话题 -->
+        <param name="subscriber_topic" value="/audio_stream" />
+        <!-- 发布的文本话题 -->
+        <param name="publisher_topic" value="/txt_stream" />
+        <!-- 输出文件名 -->
+        <param name="fname_out" value="" />
+    </node>
+</launch>
