@@ -1,5 +1,5 @@
 # Whisper ROS1 Node
-![Whisper ROS1 Node](https://user-images.githubusercontent.com/your_placeholder_image_link.jpeg)
+![whisper_ros1_logo](https://github.com/user-attachments/assets/54aad0fe-5b17-40e7-94cc-3bb76ed85e61)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains a ROS1 node for real-time speech-to-text transcription using the **Whisper** model. The node subscribes to an audio stream and publishes the transcribed text to a specified topic. This project is built on top of [whisper.cpp](https://github.com/ggerganov/whisper.cpp) by Georgi Gerganov, which provides an efficient implementation of the Whisper model in C++.
