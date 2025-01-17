@@ -1,4 +1,6 @@
 # Whisper ROS1 Node
+![Whisper ROS1 Node](https://user-images.githubusercontent.com/your_placeholder_image_link.jpeg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains a ROS1 node for real-time speech-to-text transcription using the **Whisper** model. The node subscribes to an audio stream and publishes the transcribed text to a specified topic. This project is built on top of [whisper.cpp](https://github.com/ggerganov/whisper.cpp) by Georgi Gerganov, which provides an efficient implementation of the Whisper model in C++.
 
@@ -112,6 +114,14 @@ Check out a live demonstration of the Whisper ROS1 node in action:
 
 ---
 
+## Building a ROS Node for Audio Publishing
+
+To build a ROS node that publishes audio data, you can refer to the following Git repository for guidance:
+
+- [ROS Audio Publisher Node](https://github.com/zzl410/audio_publisher)
+
+---
+
 ## Running the Node
 
 To start the Whisper ROS1 node, run the following command:
@@ -161,15 +171,6 @@ The node uses a basic VAD detector to determine when to transcribe audio. The `v
 When silence is detected, the node will transcribe the last `--length` milliseconds of audio and output a transcription block suitable for parsing.
 
 ---
-
-## Building a ROS Node for Audio Publishing
-
-To build a ROS node that publishes audio data, you can refer to the following Git repository for guidance:
-
-- [ROS Audio Publisher Node](https://github.com/zzl410/audio_publisher)
-
----
-
 
 ## License
 
