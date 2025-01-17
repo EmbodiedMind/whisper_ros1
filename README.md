@@ -10,7 +10,7 @@ This repository contains a ROS1 node for real-time speech-to-text transcription 
 
 Check out a live demonstration of the Whisper ROS1 node in action:
 
-- [Whisper ROS1 Demo](http://)
+- [Whisper ROS1 Demo](https://github.com/user-attachments/assets/cb17b09d-cc6a-45b1-91e2-fe8e7a8581ab)
 
 ---
 
