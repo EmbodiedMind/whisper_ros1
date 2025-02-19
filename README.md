@@ -101,7 +101,7 @@ https://github.com/user-attachments/assets/cb17b09d-cc6a-45b1-91e2-fe8e7a8581ab
 
    ```bash
    cd ~/catkin_ws
-   catkin_make
+   catkin_make -DGGML_CUDA=1
    ```
 
 6. **Source the Workspace**:
