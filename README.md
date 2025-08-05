@@ -116,7 +116,7 @@ https://github.com/user-attachments/assets/cb17b09d-cc6a-45b1-91e2-fe8e7a8581ab
 
 To build a ROS node that publishes audio data, you can refer to the following Git repository for guidance:
 
-- [ROS Audio Publisher Node](https://github.com/HITSZ-Robotics/audio_publisher)
+- [ROS Audio Publisher Node](https://github.com/EmbodiedMind/audio_publisher)
 
 ---
 
